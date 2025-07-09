@@ -11,9 +11,9 @@ export const CartesTypes = ({ icon, typeName, count }: CartesTypesProps) => {
     <div
       style={{
         backgroundColor: "#fff",
-        borderRadius: "0px",
+        borderRadius: "10px",
         padding: "20px",
-        width: "220px",
+        width: "150px",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
@@ -22,40 +22,16 @@ export const CartesTypes = ({ icon, typeName, count }: CartesTypesProps) => {
         margin: "10px",
       }}
     >
-      <div
-        style={{
-          backgroundColor: "#fdecea",
-          borderRadius: "50%",
-          padding: "10px",
-        }}
-      >
+      <div style={{ backgroundColor: "#fdecea", borderRadius: "50%", padding: "10px" }}>
         <img src={icon} alt={typeName} width={30} height={30} />
       </div>
 
       <div style={{ textAlign: "right" }}>
-        <p
-          style={{
-            margin: 0,
-            color: "#999",
-            fontSize: "12px",
-            fontWeight: "bold",
-          }}
-        >
+        <p style={{ margin: 0, color: "#999", fontSize: "12px", fontWeight: "bold" }}>
           {typeName.toUpperCase()} TYPE
         </p>
-        <p
-          style={{
-            margin: 0,
-            fontSize: "24px",
-            fontWeight: "bold",
-            color: "#222",
-          }}
-        >
-          {count}
-        </p>
-        <p style={{ margin: 0, fontSize: "14px", color: "#e63946" }}>
-          Pokemons
-        </p>
+        <p style={{ margin: 0, fontSize: "24px", fontWeight: "bold", color: "#222" }}>{count}</p>
+        <p style={{ margin: 0, fontSize: "14px", color: "#e63946" }}>Pokemons</p>
       </div>
     </div>
   );

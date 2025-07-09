@@ -9,12 +9,12 @@ export const CarteNombreTotal = ({ total }: CarteNombreTotalProps) => {
     <div
       style={{
         backgroundColor: "white",
-        borderRadius: "0px",
+        borderRadius: "10px",
         padding: "20px",
-        width: "150px",
+        width: "200px",
         boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
         fontFamily: "Arial, sans-serif",
-        margin: "10px",
+        margin: "15px",
       }}
     >
       <div>
